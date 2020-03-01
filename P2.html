@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,142 +9,141 @@
 </head>
 <body>
     <div id="container">
-
+        <!--le container est composé de deux parties : 
+            -une partie liseret regroupant la photo les contact la description et les loisir
+            -une partie page principal regroupant le titre les formations les expériences et les recommandations -->
+        
         <div id="liseret">
-
-            <aside>
-                <div class="photo">
-                    <a href="images/photoCV.jpg" alt="Photo CV">
-                        <img src="images/miniphotoCV.jpg" alt="Photo CV"/>
-                    </a>
-                </div>
-
-                <div id="contact">
-                    <h2 class="color color__background">Contact</h2>
-                    <ul>
-                        <li>Adresse<br/>Arles France</li>
-                        <li>Téléphone<br/>07 82 93 33 14</li>
-                        <li>Email<br/>tpegrp6132@gmail.com</li>
-                        <li>Site web<br/>www.name.com</li>
-                    </ul>
-                </div>
-
-                <div id="description">
-                    <h2 class="color color__background">À propos</h2>
-                    <p>J'ai 20 ans et j'ai eu mon Bac ES en 2018.
-                        J'ai tenté une Licence Mathématique informatique qui m'a permis de découvrir l'informatique. Suite à cela j'ai décidé de m'orienté vers OpenClassrooms pour suivre une formation de Développeur Web.</p>
-                </div>
-
-                <div id="loisir">
-                    <h2 class="color color__background">Loisir</h2>
-                    <div class="icones_loisir">
-                        <div class="border"><i class="couleur_secondaire fas fa-book"></i></div>
-                        <div class="border"><i class="couleur_secondaire fas fa-dumbbell"></i></div>
-                        <div class="border"><i class="couleur_secondaire fas fa-gamepad"></i></div>
-                    </div>
-                </div>
-            </aside>   
-        </div>
-
+            <figure>
+            <!--la balise figure contient la photo du CV et un lien permettant de voir la photo en plus grand format-->
+                <a href="images/photoCV.jpg" alt="Photo CV">
+                    <img src="images/miniphotoCV.jpg" alt="Photo CV" />
+                </a>
+            </figure>
+            
+            <section id="contact">
+            <!--la section contact contient un titre h2 et une liste contenant les differents coordonnées -->
+                <h2>Contact</h2>
+                <ul>
+                    <li>Adresse<br/>Arles France</li>
+                    <li>Téléphone<br/>07 82 93 33 14</li>
+                    <li>Email<br/>tpegrp6132@gmail.com</li>
+                    <li>Site web<br/>www.name.com</li>
+                </ul>
+            </section>
+            
+            <section id="description">
+            <!--la section description contient un titre h2 et un paragraphe contenant la description -->
+                <h2>À propos</h2>
+                <p>J'ai 20 ans et j'ai eu mon Bac ES en 2018.
+                    J'ai tenté une Licence Mathématique informatique qui m'a permis de découvrir l'informatique. Suite à cela j'ai décidé de m'orienté vers OpenClassrooms pour suivre une formation de Développeur Web.</p>
+            </section>
+                
+            <section id="loisirs">
+            <!--la section loisirs contient un titre h2 et une liste contenant les icones loisir-->
+                <h2>Loisir</h2>
+                <ul>
+                    <li><i class=" fas fa-book"></i></li>
+                    <li><i class=" fas fa-dumbbell"></i></li>
+                    <li><i class=" fas fa-gamepad"></i></li>
+                </ul>
+            </section>
+        </div> 
+            
         <div id="pageprincipal">
             <header>
-                <h1><span class="color">Adem</span>Bensalem</h1>
-                <p><span class="color__underline">Dével</span>oppeur web freelance</p>
+            <!--la balise header contient une balise h1 avec le prénom et le nom et une balise h2 contenant le métier-->
+                <h1><span>ADEM</span> BENSALEM</h1>
+                <h2><span>Dével</span>oppeur web freelance</h2>
             </header>
-
-            <article>
-                <section id="parcours">
-                    <h2 class="color__underline"><i class="color fas fa-graduation-cap"></i> Formation</h2>
-                    <ul>
-                        <li>
-                            <div class="liste">
-                                <div class="bloc_date">
-                                    <i class="color far fa-dot-circle"></i>
-                                    <div class="date">
-                                        2020 - Aujourd'hui<br/>Arles
-                                    </div>
-                                </div>
-                                <div class="paragraphe">
-                                    <h3>OpenClassrooms</h3>
-                                    <h4>Formation Développeur Web</h4>
-                                    <p>Je suis actuellement une formation de développeur web sur OpenClassrooms.</p>
-                                </div>
+            
+            <section id="formations">
+            <!--la section formations contient un titre h2 avec une icone et une liste contenant les formations. 
+                Chaque parties de la liste est divisé en 2 une partie avec le bloc date et une partie avec le paragraphe  -->
+                <h2><i class=" fas fa-graduation-cap"></i> Formations</h2>
+                <ul>
+                    <li>
+                        <div class="bloc_date">
+                            <i class="far fa-dot-circle"></i>
+                            <div class="date">
+                                2020 - Aujourd'hui<br/>Arles
                             </div>
-                        </li>
-                        <li>
-                            <div class="liste">
-                                <div class="bloc_date">
-                                    <i class="color fas fa-circle"></i>
-                                    <div class="date">
-                                        2018 - 2019<br/>Avignon
-                                    </div>
-                                </div>
-                                <div class="paragraphe">
-                                    <h3>Université d'Avignon</h3>
-                                    <h4>Licence Mathématique-Informatique</h4>
-                                    <p>Formation suivie dans sa totalité, examens non présentés(formation ne convenant pas à mes souhaits).</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="liste">
-                                <div class="bloc_date">
-                                    <i class="color fas fa-circle"></i>
-                                    <div class="date">
-                                        2017 - 2018<br/>Arles
-                                    </div>
-                                </div>
-                                <div class="paragraphe">
-                                    <h3>Lycée Pasquet</h3>
-                                    <h4>Bac ES - option Mathématique</h4>
-                                    <p>Obtention de mon bac ES.</p>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </section>
-
-                <section id="experiences">
-                    <h2 class="color__underline"><i class=" color fas fa-briefcase"></i> expériences professionelle</h2>
-                    <ul>
-                        <li>
-                            <div class="liste">
-                                <div class="bloc_date">
-                                    <i class="color far fa-dot-circle"></i>
-                                    <div class="date">
-                                        2015 - 2016<br/>Arles
-                                    </div>
-                                </div>
-                                <div class="paragraphe">
-                                    <h3>Stage</h3>
-                                    <h4>En Pharmacie</h4>
-                                    <p>J'ai effectué un stage en pharmacie lors de ma dernière année de collége.</p>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </section>
-
-                <section id="recommandations">
-                    <h2 class="color__underline"><i class="color fas fa-pencil-alt"></i> recommandations</h2>
-                    <div class="item_recommandations">
-                        <div class="recommandeur">
-                            <h3>Maxime kieman</h3>
-                            <h4>Directeur,Mon agence</h4>
-                            <p>Téléphone:</p>
-                            <p>Email:name@email.com</p>
                         </div>
-                        <div class="recommandeur">
-                            <h3>Maxime kieman</h3>
-                            <h4>Directeur,Mon agence</h4>
-                            <p>Téléphone:</p>
-                            <p>Email:name@email.com</p>
+                        <div class="paragraphe">
+                            <h3>OpenClassrooms</h3>
+                            <h4>Formation Développeur Web</h4>
+                            <p>Je suis actuellement une formation de développeur web sur OpenClassrooms.</p>
+                        </div>                        
+                    </li>
+                    <li>                      
+                        <div class="bloc_date">
+                            <i class="fas fa-circle"></i>
+                            <div class="date">
+                                2018 - 2019<br/>Avignon
+                            </div>
                         </div>
+                        <div class="paragraphe">
+                            <h3>Université d'Avignon</h3>
+                            <h4>Licence Mathématique-Informatique</h4>
+                            <p>Formation suivie dans sa totalité, examens non présentés(formation ne convenant pas à mes souhaits).</p>
+                        </div>                       
+                    </li>
+                    <li>                      
+                        <div class="bloc_date">
+                            <i class="fas fa-circle"></i>
+                            <div class="date">
+                                2017 - 2018<br/>Arles
+                            </div>
+                        </div>
+                        <div class="paragraphe">
+                            <h3>Lycée Pasquet</h3>
+                            <h4>Bac ES - option Mathématique</h4>
+                            <p>Obtention de mon bac ES.</p>
+                        </div>                       
+                    </li>
+                </ul>
+            </section>
+            
+            <section id="experiences">
+            <!--la section experiences contient un titre h2 avec une icone et une liste contenant les expérience. 
+                Chaque parties de la liste est divisé en 2 une partie avec le bloc date et une partie avec le paragraphe  -->
+                <h2><i class="fas fa-briefcase"></i> expériences professionelle</h2>
+                <ul>
+                    <li>                  
+                        <div class="bloc_date">
+                            <i class="far fa-dot-circle"></i>
+                            <div class="date">
+                                2015 - 2016<br/>Arles
+                            </div>
+                        </div>
+                        <div class="paragraphe">
+                            <h3>Stage</h3>
+                            <h4>En Pharmacie</h4>
+                            <p>J'ai effectué un stage en pharmacie lors de ma dernière année de collége.</p>
+                        </div>                    
+                    </li>
+                </ul>
+            </section>
+            
+            <section id="recommandations">
+            <!--la section recommandations contient une balise titre h2 ainsi qu'une classe item_recommandations contenant les differentes recommandations -->
+                <h2><i class="fas fa-pencil-alt"></i> recommandations</h2>
+                <div class="item_recommandations">
+                    <div>
+                        <h3>Maxime kieman</h3>
+                        <h4>Directeur,Mon agence</h4>
+                        <p>Téléphone:</p>
+                        <p>Email:name@email.com</p>
                     </div>
-                </section>
-            </article>
-
-        </div>
+                    <div>
+                        <h3>Maxime kieman</h3>
+                        <h4>Directeur,Mon agence</h4>
+                        <p>Téléphone:</p>
+                        <p>Email:name@email.com</p>
+                    </div>
+                </div>
+            </section>
+        </div>         
     </div>
 </body>
 </html>
