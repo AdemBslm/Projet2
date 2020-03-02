@@ -38,6 +38,8 @@ body section h2, body h3 {
   #container {
     flex-direction: column;
     border: none;
+    width: 100%;
+    margin: 0px;
   }
 }
 
@@ -74,7 +76,9 @@ figure img {
 @media (max-width: 1199px) {
   figure {
     width: 100%;
+    margin: auto;
     order: 1;
+    text-align: center;
   }
   figure img {
     border: solid 5px #9CCC65;
@@ -91,6 +95,10 @@ figure img {
   #contact {
     order: 7;
     background-color: #9CCC65;
+    text-align: center;
+  }
+  #contact h2 {
+    margin: 0px;
   }
 }
 
@@ -105,6 +113,9 @@ figure img {
   #description {
     order: 3;
     background-color: #9CCC65;
+  }
+  #description h2 {
+    margin: 0px;
   }
 }
 
@@ -123,6 +134,9 @@ figure img {
   #loisirs {
     order: 8;
     background-color: #9CCC65;
+  }
+  #loisirs h2 {
+    margin: 0px;
   }
 }
 
@@ -185,6 +199,7 @@ header h2 span {
 @media (max-width: 1199px) {
   header {
     order: 2;
+    text-align: center;
   }
 }
 
@@ -200,24 +215,26 @@ header h2 span {
   }
 }
 
+#recommandations .item_recommandations {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+#recommandations .item_recommandations h3, #recommandations .item_recommandations h4, #recommandations .item_recommandations p {
+  margin: 2%;
+}
 @media (max-width: 1199px) {
   #recommandations {
     order: 6;
+  }
+  #recommandations .item_recommandations {
+    justify-content: space-around;
   }
 }
 
 ul {
   padding-left: 0%;
   list-style-type: none;
-}
-
-.item_recommandations {
-  display: flex;
-  justify-content: space-between;
-  margin: 20px;
-}
-.item_recommandations h3, .item_recommandations h4, .item_recommandations p {
-  margin: 2%;
 }
 
 /*# sourceMappingURL=style.css.map */
