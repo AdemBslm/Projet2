@@ -228,7 +228,8 @@ header h2 span {
     order: 6;
   }
   #recommandations .item_recommandations {
-    justify-content: space-around;
+    flex-direction: column;
+    text-align: center;
   }
 }
 
