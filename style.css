@@ -158,7 +158,7 @@ figure img {
 }
 #pageprincipal li .bloc_date {
   display: flex;
-  width: 35%;
+  width: 40%;
 }
 #pageprincipal li .bloc_date i {
   padding-top: 4px;
@@ -167,7 +167,7 @@ figure img {
   margin-left: 5%;
 }
 #pageprincipal li .paragraphe {
-  width: 65%;
+  width: 60%;
 }
 #pageprincipal li h3, #pageprincipal li h4, #pageprincipal li p {
   margin: 1px;
