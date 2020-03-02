@@ -34,6 +34,12 @@ body section h2, body h3 {
   display: flex;
   flex-direction: row;
 }
+@media (max-width: 1199px) {
+  #container {
+    flex-direction: column;
+    border: none;
+  }
+}
 
 #liseret {
   background-color: #9CCC65;
@@ -49,12 +55,30 @@ body section h2, body h3 {
   height: 30px;
   padding-top: 5px;
 }
+@media (max-width: 1199px) {
+  #liseret {
+    width: 100%;
+    display: contents;
+  }
+}
 
-img {
+figure {
+  margin: auto;
+}
+figure img {
   border: solid 3px #83bf3f;
   border-radius: 50%;
   width: 175px;
   height: 175px;
+}
+@media (max-width: 1199px) {
+  figure {
+    width: 100%;
+    order: 1;
+  }
+  figure img {
+    border: solid 5px #9CCC65;
+  }
 }
 
 #contact ul {
@@ -63,6 +87,12 @@ img {
 #contact ul li {
   margin-bottom: 10px;
 }
+@media (max-width: 1199px) {
+  #contact {
+    order: 7;
+    background-color: #9CCC65;
+  }
+}
 
 #description {
   flex: 1;
@@ -70,6 +100,12 @@ img {
 #description p {
   margin: 30px;
   word-wrap: break-word;
+}
+@media (max-width: 1199px) {
+  #description {
+    order: 3;
+    background-color: #9CCC65;
+  }
 }
 
 #loisirs ul {
@@ -82,6 +118,12 @@ img {
   border-radius: 50%;
   width: 40px;
   height: 40px;
+}
+@media (max-width: 1199px) {
+  #loisirs {
+    order: 8;
+    background-color: #9CCC65;
+  }
 }
 
 #pageprincipal {
@@ -116,6 +158,12 @@ img {
 #pageprincipal li h3, #pageprincipal li h4, #pageprincipal li p {
   margin: 1px;
 }
+@media (max-width: 1199px) {
+  #pageprincipal {
+    width: 100%;
+    display: contents;
+  }
+}
 
 header {
   margin-bottom: 50px;
@@ -133,6 +181,29 @@ header h2 {
 }
 header h2 span {
   border-bottom: solid 2px #9CCC65;
+}
+@media (max-width: 1199px) {
+  header {
+    order: 2;
+  }
+}
+
+@media (max-width: 1199px) {
+  #formations {
+    order: 4;
+  }
+}
+
+@media (max-width: 1199px) {
+  #experiences {
+    order: 5;
+  }
+}
+
+@media (max-width: 1199px) {
+  #recommandations {
+    order: 6;
+  }
 }
 
 ul {
