@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADEM BENSALEM</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/0c7937f838.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="container">
+        <!--le container est composé de deux parties : 
+            -une partie liseret regroupant la photo les contact la description et les loisir
+            -une partie page principal regroupant le titre les formations les expériences et les recommandations -->
+        
+        <div id="liseret">
+            <figure>
+            <!--la balise figure contient la photo du CV et un lien permettant de voir la photo en plus grand format-->
+                <a href="images/photoCV.jpg">
+                    <img src="images/miniphotoCV.jpg" alt="Photo CV" />
+                </a>
+            </figure>
+            
+            <section id="contact">
+            <!--la section contact contient un titre h2 et une liste contenant les differents coordonnées -->
+                <h2>Contact</h2>
+                <ul>
+                    <li><strong>Adresse</strong><br/>Arles France</li>
+                    <li><strong>Téléphone</strong><br/>07 82 93 33 14</li>
+                    <li><strong>Email</strong><br/>tpegrp6132@gmail.com</li>
+                    <li><strong>Site Web</strong><br/>https://github.com/AdemBslm</li>
+                </ul>
+            </section>
+            
+            <section id="description">
+            <!--la section description contient un titre h2 et un paragraphe contenant la description -->
+                <h2>À propos</h2>
+                <p>Je m'appelle Adem BENSALEM, j'ai 20 ans. J'ai obtenu mon Bac Économiques et Social en 2018, par la suite 
+                    j'ai tenté une Licence Mathématiques-Informatique qui m'a permis de découvrir
+                    l'informatique. Suite à cela, j'ai décidé de m'orienté vers OpenClassrooms pour suivre
+                    une formation de Développeur Web.</p>
+            </section>
+                
+            <section id="loisirs">
+            <!--la section loisirs contient un titre h2 et une liste contenant les icones loisir-->
+                <h2>Loisir</h2>
+                <ul>
+                    <li><i class=" fas fa-book"></i></li>
+                    <li><i class=" fas fa-dumbbell"></i></li>
+                    <li><i class=" fas fa-gamepad"></i></li>
+                </ul>
+            </section>
+        </div> 
+            
+        <div id="pageprincipal">
+            <header>
+            <!--la balise header contient une balise h1 avec le prénom et le nom et une balise h2 contenant le métier-->
+                <h1><span>ADEM</span> BENSALEM</h1>
+                <h2><span>Dével</span>oppeur web freelance</h2>
+            </header>
+            
+            <section id="formations">
+            <!--la section formations contient un titre h2 avec une icone et des balises articles contenant les formations. 
+                la balise article est divisé en 2 une partie avec le bloc date et une partie avec le paragraphe  -->
+                <h2><i class=" fas fa-graduation-cap"></i> Formations</h2>
+                
+                <article>
+                    <div class="bloc_date">
+                        <i class="far fa-dot-circle"></i>
+                        <div class="date">
+                            2020 - Aujourd'hui<br/>Arles
+                        </div>
+                    </div>
+                    <div class="paragraphe">
+                        <h3>OpenClassrooms</h3>
+                        <h4>Formation Développeur Web</h4>
+                        <p>Je suis actuellement une formation de développeur web sur OpenClassrooms.</p>
+                    </div>                        
+                </article>   
+
+                <article>               
+                    <div class="bloc_date">
+                        <i class="fas fa-circle"></i>
+                        <div class="date">
+                            2018 - 2019<br/>Avignon
+                        </div>
+                    </div>
+                    <div class="paragraphe">
+                        <h3>Université d'Avignon</h3>
+                        <h4>Licence Mathématiques-Informatique</h4>
+                        <p>Formation suivie dans sa totalité, examens non présentés (formation ne convenant pas à mes souhaits ).</p>
+                    </div>                       
+                </article>
+
+                <article>          
+                    <div class="bloc_date">
+                        <i class="fas fa-circle"></i>
+                        <div class="date">
+                            2017 - 2018<br/>Arles
+                        </div>
+                    </div>
+                    <div class="paragraphe">
+                        <h3>Lycée Pasquet</h3>
+                        <h4>Bac ES - option Mathématiques</h4>
+                        <p>Obtention de mon Bac Économique et Social.</p>
+                    </div>                       
+                </article>
+
+            </section>
+            
+            <section id="experiences">
+            <!--la section experiences contient un titre h2 avec une icone et une balise article contenant les expérience. 
+                la balise article est divisé en 2 une partie avec le bloc date et une partie avec le paragraphe  -->
+                <h2><i class="fas fa-briefcase"></i> expériences professionelles</h2>
+                <article>                  
+                    <div class="bloc_date">
+                        <i class="far fa-dot-circle"></i>
+                        <div class="date">
+                            2015 - 2016<br/>Arles
+                        </div>
+                    </div>
+                    <div class="paragraphe">
+                        <h3>Stage</h3>
+                        <h4>En Pharmacie</h4>
+                        <p>J'ai effectué un stage en pharmacie lors de ma dernière année de collège.</p>
+                    </div>                    
+                </article>
+            </section>
+            
+            <section id="recommandations">
+            <!--la section recommandations contient une balise titre h2 ainsi qu'une classe item_recommandations contenant les differentes recommandations -->
+                <h2><i class="fas fa-pencil-alt"></i> recommandations</h2>
+                <div class="item_recommandations">
+                    <div class="recommandeur">
+                        <h3>Bernard Yannick</h3>
+                        <h4>Développeur Web</h4>
+                        <p>Téléphone: 06.00.00.00.00</p>
+                        <p>Email: Bernard@email.com</p>
+                    </div>
+                    <div class="recommandeur">
+                        <h3>Riviere Delphine</h3>
+                        <h4>Développeuse Web</h4>
+                        <p>Téléphone: 06.00.00.00.00</p>
+                        <p>Email: Riviere@email.com</p>
+                    </div>
+                </div>
+            </section>
+        </div>         
+    </div>
+</body>
+</html>

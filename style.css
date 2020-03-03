@@ -14,14 +14,28 @@
 
 .fa-circle {
   font-size: 8px;
+  padding-top: 7px;
+}
+
+.fa-dot-circle {
+  padding-top: 4px;
 }
 
 .fa-book {
-  margin: 5px;
+  margin: 6px;
+}
+
+.fa-dumbbell {
+  margin: 1px;
+}
+
+.fa-gamepad {
+  margin: 1px;
 }
 
 body {
   font-family: "open_sansregular", Arial, sans-serif;
+  margin: 0px;
 }
 body section h2, body h3 {
   text-transform: uppercase;
@@ -150,32 +164,33 @@ figure img {
 #pageprincipal section h2 {
   border-bottom: solid 3px #9CCC65;
 }
-#pageprincipal li {
+#pageprincipal article {
   display: flex;
   justify-content: space-between;
   padding-left: 0%;
   margin-bottom: 5%;
 }
-#pageprincipal li .bloc_date {
+#pageprincipal article .bloc_date {
   display: flex;
   width: 40%;
 }
-#pageprincipal li .bloc_date i {
-  padding-top: 4px;
-}
-#pageprincipal li .bloc_date .date {
+#pageprincipal article .bloc_date .date {
   margin-left: 5%;
 }
-#pageprincipal li .paragraphe {
+#pageprincipal article .paragraphe {
   width: 60%;
 }
-#pageprincipal li h3, #pageprincipal li h4, #pageprincipal li p {
+#pageprincipal article h3, #pageprincipal article h4, #pageprincipal article p {
   margin: 1px;
 }
 @media (max-width: 1199px) {
   #pageprincipal {
     width: 100%;
     display: contents;
+  }
+  #pageprincipal section {
+    padding-left: 5px;
+    padding-right: 5px;
   }
 }
 
@@ -223,13 +238,13 @@ header h2 span {
 #recommandations .item_recommandations h3, #recommandations .item_recommandations h4, #recommandations .item_recommandations p {
   margin: 2%;
 }
+#recommandations .item_recommandations .recommandeur {
+  width: 50%;
+  word-wrap: break-word;
+}
 @media (max-width: 1199px) {
   #recommandations {
     order: 6;
-  }
-  #recommandations .item_recommandations {
-    flex-direction: column;
-    text-align: center;
   }
 }
 
